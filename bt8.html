@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt8</title>
+</head>
+<body>
+  <script>
+      function NumberReverse (array){
+
+          let first = 0
+          let last = [array.length-1]
+          while (first<last){
+              let b = array[first]
+              array[first]=array[last]
+              array[last]=b
+              first++
+              last--;
+          }
+      }
+      let x = [1,2,3,4]
+      NumberReverse(x)
+      console.log(x)
+  </script>
+
+
+   - Cách thay số cuối cùng bằng 1 số khác
+<!--  <script>-->
+<!--      function NumberReverse (array,value,index){-->
+<!--           array[index]=value-->
+<!--          let first = 0-->
+<!--          let last = [array.length-1]-->
+<!--          while (first<last){-->
+<!--              let b = array[first]-->
+<!--              array[first]=array[last]-->
+<!--              array[last]=b-->
+<!--              first++-->
+<!--              last&#45;&#45;;-->
+<!--          }-->
+<!--      }-->
+<!--      let x = [1,2,3,4]-->
+<!--      NumberReverse(x,5,x.length-1)-->
+<!--      console.log(x)-->
+<!--  </script>-->
+</body>
+</html>
